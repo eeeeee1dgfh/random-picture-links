@@ -1,3 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=https://your-first-google-form-link.com">
+    <script>
+        // JavaScript code to generate a random number (0, 1, or 2) and redirect to one of the three Google Forms links
+        const randomIndex = Math.floor(Math.random() * 3);
+        const googleFormsLinks = [
+            'https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3JtNjg1ZGVzaWduLXRuLXJlbWl4LTAwMWMuanBn.jpg',
+            'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1395991368.1711584000&semt=ais',
+            'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.canva.com%2Fphone-wallpapers%2Ftemplates%2Fcute%2F&psig=AOvVaw16xuc_C0iydVE2zLbwt7Gy&ust=1711727538346000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNCFh5Col4UDFQAAAAAdAAAAABAT'
+                // Add more picture links here
+        ];
+        window.location.href = googleFormsLinks[randomIndex];
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, <a href="https://your-first-google-form-link.com">click here</a>.</p>
+</body>
+</html>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,10 +34,7 @@
         // Function to redirect to a random picture link
         function redirectToRandomPicture() {
             var links = [
-                   'https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3JtNjg1ZGVzaWduLXRuLXJlbWl4LTAwMWMuanBn.jpg',
-                'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1395991368.1711584000&semt=ais',
-                'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.canva.com%2Fphone-wallpapers%2Ftemplates%2Fcute%2F&psig=AOvVaw16xuc_C0iydVE2zLbwt7Gy&ust=1711727538346000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNCFh5Col4UDFQAAAAAdAAAAABAT'
-                // Add more picture links here
+               
             ];
             var randomIndex = Math.floor(Math.random() * links.length);
             window.location.href = links[randomIndex];
