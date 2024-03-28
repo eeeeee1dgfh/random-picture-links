@@ -7,20 +7,23 @@
     <title>Random Picture Link</title>
 </head>
 <body>
-    <h1>Click the link for a random picture!</h1>
-    <a href="#" id="randomLink">Click Me!</a>
-
     <script>
-        document.getElementById('randomLink').addEventListener('click', function(event) {
-            event.preventDefault();
+        // Function to redirect to a random picture link
+        function redirectToRandomPicture() {
             var links = [
-                'https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3JtNjg1ZGVzaWduLXRuLXJlbWl4LTAwMWMuanBn.jpg',
+                   'https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3JtNjg1ZGVzaWduLXRuLXJlbWl4LTAwMWMuanBn.jpg',
                 'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1395991368.1711584000&semt=ais',
                 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.canva.com%2Fphone-wallpapers%2Ftemplates%2Fcute%2F&psig=AOvVaw16xuc_C0iydVE2zLbwt7Gy&ust=1711727538346000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNCFh5Col4UDFQAAAAAdAAAAABAT'
+                // Add more picture links here
             ];
             var randomIndex = Math.floor(Math.random() * links.length);
             window.location.href = links[randomIndex];
-        });
+        }
+
+        // Call the redirection function when the page loads
+        window.onload = function() {
+            redirectToRandomPicture();
+        };
     </script>
 </body>
 </html>
